@@ -1,0 +1,308 @@
+:root {
+    --navcolor: #182c83; /* Deep Blue for the navigation */
+    --navfont: white; /* White font for navigation items */
+    --accent-color: #1f47cc; /* Green accent color */
+    --background-color: #f4f4f4; /* Light background */
+    --heading-color: #333; /* Dark color for headings */
+    --text-color: #555; /* Lighter text color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding-bottom: 50px; /* Prevent content hiding behind footer */
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--navcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    color: var(--navfont);
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: var(--navfont);
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a.active {
+    color: var(--navcolor);
+    background-color: var(--navfont);
+}
+
+.nav-bar ul li a:focus {
+    outline: 3px solid var(--navcolor);
+}
+
+@media (max-width: 768px) {
+    .nav-bar ul {
+        display: none; /* Hide nav links */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu */
+        cursor: pointer;
+    }
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center content */
+}
+
+h1, h2 {
+    font-size: 2rem; /* Adjust size for readability */
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input:focus, form textarea:focus {
+    border: 2px solid var(--navcolor);
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:focus {
+    outline: 2px solid var(--navcolor);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #1a1c91;
+}
+
+h1, h2 {
+    font-weight: 600;
+    color: #0d3dc0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .nav-bar ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav .nav-bar ul li {
+    display: inline;
+}
+
+nav .nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav .nav-bar ul li a:hover,
+nav .nav-bar ul li a.active {
+    background-color: #282aa5;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Resume Section */
+/* Resume Section Styles */
+main {
+    margin-top: 100px;  /* Increase the space to clear the fixed header */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;  /* Center content with added margin */
+}
+
+.resume {
+    max-width: 900px; /* Increased width for better readability */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;  /* Slightly round corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  /* Softer shadow for better depth */
+}
+
+.title {
+    text-align: center;
+    color: #232f99; /* Maintain your title color */
+    font-size: 2.8rem;  /* Slightly increase font size for prominence */
+    margin-bottom: 30px; /* Add spacing below the title */
+    font-weight: 600;
+}
+
+.info {
+    margin-bottom: 40px;  /* Increase spacing between sections */
+}
+
+.subtitle {
+    font-size: 1.8rem;  /* Slightly larger subtitle for better readability */
+    color: #000000;
+    margin-bottom: 15px;  /* More space between subtitle and content */
+    font-weight: 500;
+}
+
+.info ul li {
+    margin-bottom: 15px;  /* Increase space between list items */
+    line-height: 1.8;
+    font-size: 1.1rem;  /* Slightly larger font for better readability */
+}
+
+.project-link {
+    color: #26136d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #1f47cc;  /* Change color on hover */
+    text-decoration: underline;
+}
+
+.info ul li strong {
+    color: #182c83;  /* Use your dark blue color for emphasis */
+    font-weight: 600;
+}
+
+/* Responsive Design for Resume Page */
+@media (max-width: 768px) {
+    .resume {
+        padding: 20px;
+        max-width: 100%;  /* Allow full-width on smaller screens */
+    }
+
+    .title {
+        font-size: 2.2rem;  /* Slightly smaller title on mobile */
+    }
+
+    .subtitle {
+        font-size: 1.5rem;  /* Adjust subtitle size for smaller screens */
+    }
+
+    .info ul li {
+        font-size: 1rem;  /* Smaller font size for list items on mobile */
+    }
+
+    .project-link {
+        font-size: 1rem;  /* Adjust link size for mobile */
+    }
+}
